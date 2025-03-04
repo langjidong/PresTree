@@ -4,17 +4,17 @@ PresTree is a prescription tree workflow for analyzing basic formulas and prescr
 
 Option
 
-<prescript_dataset>  The file contains prescrition dataset, format is "prescription_name\tprescription_composition", and the prescription composition is separated by a Chinese Comma;
-<cutoff_value>  The p-value cutoff;
-<execute_path>  The pathdir of used scripts;
+    <prescript_dataset>  The file contains prescrition dataset, format is "prescription_name\tprescription_composition", and the prescription composition is separated by a Chinese Comma;
+    <cutoff_value>       The p-value cutoff;
+    <execute_path>       The pathdir of used scripts;
 
-Example: <br />
-** sh auto_pipeline.sh -i simulation.txt -c 0.00001 -e ./**
+The simulation.txt file format is like follows:
 ```
-simulation.txt file format:
 方剂\t方剂组成
 四君子汤\t人参、白术、茯苓、炙甘草
 附子理中汤\t人参、白术、炙甘草、炮附子、干姜
 ```
+Example: <br />
+**sh auto_pipeline.sh -i simulation.txt -c 0.00001 -e /pathdir ***(where the script folder is located）*** **
 
 ***Contact and E-mail: langjidong@hotmail.com***
